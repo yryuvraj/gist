@@ -1,4 +1,4 @@
-# ElixirGist
+# Gist
 
 To start your Phoenix server:
 

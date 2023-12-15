@@ -1,0 +1,53 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+@font-face {
+    font-family: "WorkSans";
+    src: url("/fonts/WorkSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "WorkSans";
+    src: url("/fonts/WorkSans-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+.dropdown-menu-arrow::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: calc(95% - 12px);
+    border-width: 0 5px 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent
+}
+
+.menu-item {
+    @apply block px-4 py-2 text-sm text-white font-brand font-regular
+}
+
+.menu-item:hover {
+    @apply hover:text-emDark-light
+}
+
+.round-image-padding {
+    border-radius: 50%;
+    border: 1.5px solid #FFFFFF;
+    padding: 4px;
+}
+
+.img-down-arrow::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 45%;
+    transform: translateY(-50%);
+    border-width: 3px 3px 0 3px;
+    border-color: white transparent transparent transparent;
+    border-style: solid;
+}

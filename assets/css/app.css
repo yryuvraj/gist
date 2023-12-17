@@ -22,37 +22,13 @@
     height: 225px;
 }
 
-form input[type="text"]{
-    @apply bg-emDark-dark font-brand font-regular text-white text-xs border border-white
-}
-
-form input[type="text"]:focus{
-    @apply focus:outline-none focus:border-emLavender focus:ring-0
-}
-
-.textarea{
-    @apply bg-emDark-dark font-brand font-regular text-white text-xs border border-white h-[300px] resize-none;
-    border-top: none;
-}
-
-.textarea:focus{
-    @apply focus:outline-none focus:border-white focus:ring-0
-}
-
-.create_button{
-    @apply bg-emPurple border border-white font-brand font-regular text-black text-base
-}
-
-.create_button:hover{
-    @apply hover:bg-emPurple-dark text-emDark-light border-emDark-light
-}
 .dropdown-menu-arrow::before {
     content: "";
     position: absolute;
     top: -5px;
     left: calc(95% - 12px);
     border-width: 0 5px 5px 5px;
-    border-style: solid; 
+    border-style: solid;
     border-color: transparent transparent white transparent
 }
 
@@ -62,6 +38,42 @@ form input[type="text"]:focus{
 
 .menu-item:hover {
     @apply hover:text-emDark-light
+}
+
+form input[type="text"] {
+    @apply bg-emDark-dark font-brand font-regular text-white text-xs border border-white
+}
+
+form input[type="text"]:focus {
+    @apply focus:outline-none focus:border-emLavender focus:ring-0
+}
+
+.textarea {
+    @apply bg-emDark-dark font-brand font-regular text-white text-xs border border-white h-[300px] resize-none;
+    border-top: none;
+    border-left: none;
+}
+
+.textarea:focus {
+    @apply focus:outline-none focus:border-white focus:ring-0
+}
+
+.line-numbers {
+    @apply border border-white font-brand font-regular text-xs text-emDark-light bg-emDark-dark h-[300px] w-[54px] text-right overflow-hidden resize-none;
+    border-right: none;
+    border-top: none;
+}
+
+.line-numbers:focus {
+    @apply focus:outline-none focus:border-white focus:ring-0;
+}
+
+.create_button {
+    @apply bg-emPurple border border-white font-brand font-regular text-black text-base
+}
+
+.create_button:hover {
+    @apply hover:bg-emPurple-dark text-emDark-light border-emDark-light
 }
 
 .round-image-padding {

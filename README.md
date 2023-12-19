@@ -1,4 +1,4 @@
-# Gist
+# Gist - Dynamic Syntaxing
 
 To start your Phoenix server:
 

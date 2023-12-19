@@ -1,5 +1,10 @@
 # Gist - Dynamic Syntaxing
 
+Before even starting the Phoenix Server you need to Run your pistgres container
+
+  * Run your postgres container on any open port you have and update the details of your container in `./config/dev.exs`.
+  * Move to starting your Phoenix server in the next point.
+
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
